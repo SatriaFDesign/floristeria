@@ -27,8 +27,8 @@
             <title>Floristería Bandar Lampung | Buket Bunga, Mahar, Hampers & Gift Custom</title>
 
             <!-- Deskripsi Website (max 160 karakter) -->
-            <meta name="description"
-                content="Floristería Bandar Lampung – Spesialis buket bunga, buket uang, buket wisuda, mahar, hampers, papan akrilik, dan gift custom untuk wisuda, ulang tahun, pernikahan, grand opening, dan berbagai perayaan spesial. Hubungi 0878-0205-5577." />
+            <meta name="keywords"
+                content="florist bandar lampung, buket bunga bandar lampung, buket uang bandar lampung, hampers bandar lampung, mahar bandar lampung, papan akrilik bandar lampung">
 
             <!-- Kata Kunci SEO -->
             <meta name="keywords" content="
@@ -102,7 +102,7 @@
             <!-- Open Graph -->
             <meta property="og:title" content="Floristería Bandar Lampung | Buket Bunga, Mahar, Hampers & Gift Custom" />
             <meta property="og:description"
-                content="florist bandar lampung, floristeria bandar lampung, toko bunga bandar lampung, buket bunga bandar lampung, buket wisuda bandar lampung, buket uang bandar lampung, buket snack bandar lampung, buket custom bandar lampung, mahar pernikahan bandar lampung, hampers bandar lampung, gift custom bandar lampung, papan akrilik bandar lampung, papan ucapan akrilik, bunga wisuda, bunga ulang tahun, bunga anniversary, bunga pernikahan, hadiah wisuda, hadiah ulang tahun, florist lampung, toko buket bandar lampung, jasa florist bandar lampung" />
+                  content="florist bandar lampung, floristeria bandar lampung, toko bunga bandar lampung, buket bunga bandar lampung, buket wisuda bandar lampung, buket uang bandar lampung, buket snack bandar lampung, buket custom bandar lampung, mahar pernikahan bandar lampung, hampers bandar lampung, gift custom bandar lampung, papan akrilik bandar lampung, papan ucapan akrilik, bunga wisuda, bunga ulang tahun, bunga anniversary, bunga pernikahan, hadiah wisuda, hadiah ulang tahun, florist lampung, toko buket bandar lampung, jasa florist bandar lampung" />
             <meta property="og:image" content="https://isi_sendiri.my.id/img/preview.jpg" />
             <meta property="og:url" content="https://isi_sendiri.my.id" />
             <meta property="og:type" content="website" />
@@ -116,6 +116,9 @@
 
             <!-- Canonical URL -->
             <link rel="canonical" href="https://isi_sendiri.my.id" />
+
+            <!-- Font -->
+             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
             <!--CSS Framework-->
             <script src="https://cdn.tailwindcss.com"></script>
@@ -133,98 +136,104 @@
                   transform: translateY(20px);
                   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
                 }
+
                 /* Animasi saat muncul */
                 .animate-fade-up.show {
                   opacity: 1;
                   transform: translateY(0);
                 }
+
+                nav a{
+                    font-family: 'Montserrat', sans-serif;
+                }
+                
             </style>
 
             <script type="application/ld+json">
                 {
-                 "@context": "https://schema.org",
-                 "@type": "LocalBusiness",
-                 "name": "Floristería",
-                 "image": "https://isi_sendiri.my.id/img/icon/logo.svg",
-                 "url": "https://isi_sendiri.my.id",
-                 "telephone": "087802055577",
-                 "address": {
-                   "@type": "PostalAddress",
-                   "addressLocality": "Bandar Lampung",
-                   "addressCountry": "ID"
-                 }
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Floristería",
+                    "image": "https://isi_sendiri.my.id/img/icon/logo.svg",
+                    "url": "https://isi_sendiri.my.id",
+                    "telephone": "087802055577",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Bandar Lampung",
+                        "addressCountry": "ID"
+                    }
                 }
-              </script>
+            </script>
         </head>
 
     <body class="loading bg-white text-[#4D4D4D]">
 
         <!-- Navbar -->
         <header
-        class="fixed top-0 left-0 w-full px-6 py-4 bg-black/55 backdrop-blur-2xl shadow-[0_2px_8px_rgba(0,0,0,0.08)]"
+        class="fixed top-0 left-0 w-full px-6 py-4 bg-black/40 backdrop-blur-2xl shadow-[0_2px_8px_rgba(0,0,0,0.08)]"
         style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
 
-         <div class="flex items-center">
+            <div class="max-w-7xl mx-auto flex items-center">
 
-            <!-- Logo -->
-            <div class="flex-1 flex items-center">
-                <a href="#home" class="flex items-center space-x-3">
-                    <img src="img/icon/logo.svg" alt="Logo"
-                        class="h-6 sm:h-7 md:h-8 w-auto transition-all duration-200 hover:brightness-110">
-                </a>
+                <!-- Logo -->
+                <div class="flex-1 flex items-center">
+                    <a href="#home" class="flex items-center space-x-3">
+                        <img src="img/icon/logo.svg" alt="Logo"
+                            class="h-9 sm:h-7 md:h-10 w-auto transition-all duration-200 hover:brightness-110">
+                    </a>
+                </div>
+
+                <!-- Desktop Menu Tengah -->
+                <div class="hidden md:flex flex-1 justify-center">
+                    <nav class="flex items-center space-x-8">
+                        <a href="#home" class="text-gray-300 hover:text-white text-base">Home</a>
+                        <a href="#catalog" class="text-gray-300 hover:text-white text-base">Catalog</a>
+                        <a href="#gallery" class="text-gray-300 hover:text-white text-base">Gallery</a>
+                        <a href="#about" class="text-gray-300 hover:text-white text-base">About</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white text-base">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- Desktop Sosmed Kanan -->
+                <div class="hidden md:flex flex-1 justify-end items-center space-x-4">
+
+                    <a href="https://wa.me/+6287802055577" target="_blank"
+                        class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-3.5 py-2 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+                        <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
+                        <span style="font-family: 'Montserrat', sans-serif; font-weight: 700">
+                            Chat Admin
+                        </span>
+                    </a>
+
+                    <a href="https://instagram.com/floristeria.florist" target="_blank">
+                        <img src="img/icon/instagram.svg" alt="Instagram"
+                            class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <img src="img/icon/facebook.svg" alt="Facebook"
+                            class="w-5 h-5 transition-all duration-200 hover:brightness-150">
+                    </a>
+
+                </div>
+
+                <!-- Hamburger Mobile -->
+                <button id="menu-btn"
+                    class="w-8 h-8 flex flex-col justify-center items-center gap-[5px] md:hidden relative -top-[1px]">
+                    <span
+                        class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 -translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
+                    <span
+                        class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 transition-all duration-300 origin-center rounded-full"></span>
+                    <span
+                        class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
+                </button>
+
             </div>
-
-            <!-- Desktop Menu Tengah -->
-            <div class="hidden md:flex flex-1 justify-center">
-                <nav class="flex items-center space-x-10">
-                    <a href="#home" class="text-gray-300 hover:text-white text-base">Home</a>
-                    <a href="#catalog" class="text-gray-300 hover:text-white text-base">Catalog</a>
-                    <a href="#gallery" class="text-gray-300 hover:text-white text-base">Gallery</a>
-                    <a href="#about" class="text-gray-300 hover:text-white text-base">About</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white text-base">Contact</a>
-                </nav>
-            </div>
-
-            <!-- Desktop Sosmed Kanan -->
-            <div class="hidden md:flex flex-1 justify-end items-center space-x-6">
-
-                <a href="https://wa.me/+6287802055577" target="_blank"
-                    class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
-                    <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
-                    <span style="font-family: 'Roboto', sans-serif; font-weight: 700">
-                        Chat Admin
-                    </span>
-                </a>
-
-                <a href="https://instagram.com/floristeria.florist" target="_blank">
-                    <img src="img/icon/instagram.svg" alt="Instagram"
-                        class="w-5 h-5 transition-all duration-200 hover:brightness-150">
-                </a>
-
-                <a href="#" target="_blank">
-                    <img src="img/icon/facebook.svg" alt="Facebook"
-                        class="w-5 h-5 transition-all duration-200 hover:brightness-150">
-                </a>
-
-            </div>
-
-            <!-- Hamburger Mobile -->
-            <button id="menu-btn"
-                class="w-8 h-8 flex flex-col justify-center items-center gap-[5px] md:hidden relative -top-[1px]">
-                <span
-                    class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 -translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
-                <span
-                    class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 transition-all duration-300 origin-center rounded-full"></span>
-                <span
-                    class="absolute left-0 top-1/2 w-6 h-[3px] bg-gray-300 translate-y-2 transition-all duration-300 origin-center rounded-full"></span>
-            </button>
-
-        </div>
 
             <!-- Mobile Menu -->
             <div id="mobile-menu"
                 class="absolute top-full left-0 w-full bg-white z-50 text-center text-[#4D4D4D] md:hidden shadow-md overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
-                style="font-family: 'Roboto', sans-serif; font-weight: 500; z-index: 20;">
+                style="font-family: 'Montserrat', sans-serif; font-weight: 500; z-index: 20;">
 
                 <div class="py-6 space-y-4 text-base">
                     <a href="#home" class="block hover:text-gray-500">Home</a>
@@ -235,18 +244,18 @@
 
                     <div class="flex justify-center space-x-4 pt-4 border-t border-gray-200 items-center">
                         <a href="https://wa.me/+6287802055577" target="_blank"
-                        class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-4 py-2.5 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
-                        <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
-                        <span style="font-family: 'Roboto', sans-serif; font-weight: 700">Chat Admin</span>
+                        class="flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] text-white text-sm px-3.5 py-2 rounded-full shadow-md shadow-black/20 hover:brightness-110 active:translate-y-[1px] active:shadow-sm transition-all duration-200">
+                            <img src="img/icon/whatsappwhite.svg" class="w-5 h-5" />
+                            <span style="font-family: 'Montserrat', sans-serif; font-weight: 700">Chat Admin</span>
                         </a>
 
                         <a href="https://instagram.com/floristeria.florist" target="_blank">
-                        <img src="img/icon/instagramm.svg" alt="Instagram"
+                            <img src="img/icon/instagramm.svg" alt="Instagram"
                             class="w-5 h-5 transition-all duration-200 hover:brightness-150">
                         </a>
 
                         <a href="#" target="_blank">
-                        <img src="img/icon/facebookm.svg" alt="Facebook"
+                            <img src="img/icon/facebookm.svg" alt="Facebook"
                             class="w-5 h-5 transition-all duration-200 hover:brightness-150">
                         </a>
                     </div>
@@ -261,26 +270,26 @@
         <!-- Hero Image -->
         <div class="absolute inset-0">
             <img
-                src="img/hero.jpg"
+                src="img/x1.png"
                 alt="Hero Image"
                 class="w-full h-full object-cover">
         </div>
 
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
 
         <!-- Green Gradient -->
         <div
             class="absolute bottom-0 left-0 w-full h-[50%]
             bg-gradient-to-t
-            from-[#334D42]/70
-            via-[#334D42]/30
+            from-[#2D132E]/70
+            via-[#270C5C]/30
             to-transparent">
         </div>
 
         <!-- Content -->
         <div class="relative z-10 flex flex-col items-center md:items-start w-full max-w-7xl px-6 md:px-16">
-            <div class="flex flex-col items-center md:ml-16">
+            <div class="flex flex-col items-center md:ml-20">
                 <img
                 src="img/icon/logo_utama.svg"
                 alt="Logo Utama"
@@ -288,38 +297,39 @@
                 w-[360px]
                 sm:w-[450px]
                 md:w-[550px]
-                lg:w-[680px]
-                xl:w-[800px]
-                mb-8">
+                lg:w-[650px]
+                xl:w-[760px]
+                mb-6">
 
-        <a href="#services"
-        class="
-            bg-[#AB3F68]
-            hover:bg-[#923456]
-            text-white
-            text-[12px] md:text-[15px]
-            tracking-[0.3em]
-            font-medium
-            px-7 py-2.5
-            md:px-11 md:py-3.5
-            rounded-full
-            shadow-lg
-            transition-all duration-300">
-            SHOP NOW
-        </a>
-                </div>
-
-                </div>
+                
+                <a href="#services"
+                class="
+                    bg-[#96235C]
+                    hover:bg-[#923456]
+                    text-white
+                    text-[12px] md:text-[15px]
+                    tracking-[0.3em]
+                    font-medium
+                    px-7 py-2.5
+                    md:px-11 md:py-3.5
+                    rounded-full
+                    shadow-lg shadow-pink-900/30
+                    transition-all duration-300"
+                style="font-family: 'Montserrat'">
+                    SHOP NOW
+                </a>
+             </div>
+        </div>
     </section>
 
-        <!-- Backdrop Blur -->
-        <div
-            id="backdrop"
-            class="fixed inset-0 min-h-screen pt-[64px] backdrop-blur-2xl bg-black/50 opacity-0 pointer-events-none transition-all duration-500 ease-out z-10">
-        </div>
+    <!-- Backdrop Blur -->
+    <div
+         id="backdrop"
+         class="fixed inset-0 min-h-screen pt-[64px] backdrop-blur-2xl bg-black/50 opacity-0 pointer-events-none transition-all duration-500 ease-out z-10">
+    </div>
 
-        <!-- Hamburger Script -->
-        <script>
+    <!-- Hamburger Script -->
+    <script>
             const btn = document.getElementById('menu-btn');
             const lines = btn.querySelectorAll('span');
             const menu = document.getElementById('mobile-menu');
@@ -396,52 +406,81 @@
             backdrop.addEventListener('click', () => {
             closeMenu();
             });
-        </script>
+    </script>
       
-        <!-- Promo Section Responsive -->
-        <section id="promo-ramadhan" 
-            class="bg-[linear-gradient(120deg,_#FAF4F6,_#EBCFD9,_#FAF4F6)] pt-8 pb-14 md:pt-16 md:pb-20">
-        
-           <div class="max-w-6xl mx-auto px-4">
+    <!-- GRAND OPENING SECTION -->
+    <section class="py-16 md:py-20 bg-[linear-gradient(180deg,#F8F3F4,#EEDFE3)]">
 
-            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+
+            <div class="bg-white border border-[#F0E4E7] rounded-[32px] overflow-hidden shadow-[0_10px_40px_rgba(183,139,149,0.12)] animate-fade-up">
+
+                <div class="grid md:grid-cols-2 items-center">
 
                     <!-- Gambar -->
-                    <div class="md:w-1/2 flex justify-center">
-                        <img src="img/g1.png"
-                            alt="Promo Ramadhan"
-                            class="w-52 sm:w-60 md:w-72 lg:w-80 object-contain animate-fade-up">
+                    <div class="relative h-64 md:h-full">
+
+                        <img
+                            src="img/grand.png"
+                            alt="Floristería Bouquet"
+                            class="w-full h-full object-cover">
+
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+
                     </div>
 
                     <!-- Konten -->
-                    <div class="md:w-1/2 text-center md:text-left">
+                    <div class="p-8 md:p-12 text-center md:text-left">
 
-                        <h2 class="text-2xl sm:text-3xl md:text-4xl mb-4 text-[#000066] animate-fade-up"
-                            style="font-family:'Roboto',sans-serif;font-weight:700;">
-                            Spesial Grand Opening
+                        <span
+                            class="uppercase tracking-[0.25em] text-[#B78B95] text-xs md:text-sm font-medium"
+                            style="font-family:'Montserrat',sans-serif;">
+                            Grand Opening
+                        </span>
+
+                        <h2
+                            class="mt-4 text-3xl md:text-5xl text-[#4A4A4A] leading-tight"
+                            style="font-family:'Playfair Display',serif;">
+                            Floristería
+                            <span class="block text-[#6B8F71]">
+                                Bandar Lampung
+                            </span>
                         </h2>
 
-                        <p class="text-base md:text-lg mb-6 text-[#4D4D4D] animate-fade-up"
-                            style="font-family:'Roboto',sans-serif;font-weight:500;">
-                            Bergabunglah bersama kami dalam perayaan Grand Opening Floristería. Temukan koleksi buket, hampers, dan gift custom yang dirancang untuk membuat setiap momen menjadi lebih berkesan!
+                        <div class="w-16 h-px bg-[#B78B95] mx-auto md:mx-0 mt-5 mb-6"></div>
+
+                        <p
+                            class="text-gray-600 leading-7 md:leading-8"
+                            style="font-family:'Montserrat',sans-serif;">
+                            Menghadirkan koleksi buket, hampers, dan gift custom yang dirancang dengan sentuhan elegan untuk setiap momen spesial Anda.
                         </p>
 
-                        <a href="https://wa.me/+6287802055577"
-                                class="inline-flex items-center gap-2 bg-gradient-to-b from-[#25D366] to-[#1DA851] hover:brightness-110 text-white px-6 py-2.5 rounded-full text-sm md:text-base shadow-md shadow-black/20 active:shadow-sm active:translate-y-[1px] animate-fade-up"
-                                style="font-family:'Roboto',sans-serif;font-weight:700">
-                            
-                                <img src="img/icon/whatsappwhite.svg"
-                                    class="w-4 h-4 md:w-5 md:h-5"
-                                    alt="WhatsApp Icon" />
-                            
-                                Hubungi Kami Sekarang
-                        
+                        <a
+                            href="https://wa.me/6287802055577"
+                            class="inline-flex items-center gap-2 mt-8 px-7 py-3 rounded-full bg-[#6B8F71] hover:bg-[#5C7A62] text-white transition-all duration-300 shadow-md">
+
+                            <img
+                                src="img/icon/whatsappwhite.svg"
+                                alt="WhatsApp"
+                                class="w-4 h-4">
+
+                            <span
+                                class="tracking-wide"
+                                style="font-family:'Montserrat',sans-serif;font-weight:600;">
+                                Hubungi Kami
+                            </span>
+
                         </a>
 
                     </div>
+
                 </div>
+
             </div>
-        </section>
+
+        </div>
+
+    </section>
       
         <!-- Services Section -->
         <section id="catalog" class="bg-white pt-8 pb-14 md:pt-16 md:pb-20">
@@ -456,7 +495,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/printer.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic1.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">
                             Aneka Bunga Florist</h3>
@@ -467,7 +506,7 @@
                     </div>
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/banner.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic2.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">Aesthetic Bouquet</h3>
                         <p class="text-base mt-2 text-gray-600"
@@ -477,7 +516,7 @@
                     </div>
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/sticker.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic3.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">Dekorasi Mahar</h3>
                         <p class="text-base mt-2 text-gray-600"
@@ -487,7 +526,7 @@
                     </div>
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/undangan.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic4.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">Hampers Special</h3>
                         <p class="text-base mt-2 text-gray-600"
@@ -497,7 +536,7 @@
                     </div>
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/foto.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic5.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">Gift Box</h3>
                         <p class="text-base mt-2 text-gray-600"
@@ -507,7 +546,7 @@
                     </div>
 
                     <div class="bg-gradient-to-b from-[#FAFAFB] to-[#FCFCFD] p-6 rounded-3xl shadow-md shadow-black/10 text-center animate-fade-up">
-                        <img src="img/poster.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
+                        <img src="img/ic6.png" class="mx-auto mb-4 h-24" loading="lazy" decoding="async"/>
                         <h3 class="font-semibold text-xl"
                             style="font-family: 'Roboto', sans-serif; font-weight: 500;">Pacel & Bingkisan</h3>
                         <p class="text-base mt-2 text-gray-600"
@@ -529,15 +568,15 @@
                         Gallery
                     </h2>
                     <p class="text-gray-500 text-base md:text-lg animate-fade-up"
-                    style="font-family: 'Roboto', sans-serif; font-weight: 500;">
-                    Beberapa hasil dekorasi bunga yang telah kami kerjakan.
+                        style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                        Beberapa hasil dekorasi bunga yang telah kami kerjakan.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     <!-- Baris 1 -->
                     <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
-                        <img src="img/01.jpg"
+                        <img src="img/01.png"
                             class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
                             <h3 class="text-white text-lg"
@@ -555,7 +594,7 @@
                     </div>
 
                     <div class="group relative overflow-hidden rounded-3xl cursor-pointer animate-fade-up" onclick="openModal(this)">
-                        <img src="img/03.jpg"
+                        <img src="img/03.png"
                                 class="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-110">
                         <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-500 flex items-end p-6">
                             <h3 class="text-white text-lg"
@@ -594,43 +633,69 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about"
-                class="bg-gradient-to-b from-[#6B8F71] to-[#4A6A50] text-white pt-8 pb-14 md:pt-16 md:pb-20 px-6">
+    <!-- About Section -->
+    <section id="about"
+        class="relative overflow-hidden bg-[#F8F5F1] py-20 px-6">
 
-            <div class="max-w-3xl mx-auto text-center">
+        <!-- Decorative Blur -->
+        <div class="absolute top-0 left-0 w-72 h-72 bg-[#D8E5D1]/40 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-[#E8DCCB]/40 rounded-full blur-3xl"></div>
 
-                <h2 class="text-3xl md:text-3xl mb-6 animate-fade-up"
-                    style="font-family: 'Roboto', sans-serif; font-weight: 700;">
-                    About
-                </h2>
+        <div class="relative max-w-4xl mx-auto text-center">
 
-                <p class="text-white/90 text-lg leading-relaxed mb-6 animate-fade-up"
-                    style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-                    <span style="font-family: 'Roboto', sans-serif; font-weight: 700;">Floristería</span>
-                     hadir untuk membantu Anda merayakan setiap momen berharga dengan cara yang lebih indah dan berkesan. Kami menghadirkan berbagai rangkaian buket, hampers, mahar, papan akrilik, dan hadiah custom yang dirancang dengan penuh kreativitas, detail, dan sentuhan personal.
+            <span class="inline-block text-[#6B8F71] tracking-[0.25em] uppercase text-sm mb-4 animate-fade-up"
+                style="font-family: 'Roboto', sans-serif;">
+                Floristería
+            </span>
+
+            <h2 class="text-4xl md:text-5xl text-[#2F3A32] mb-8 leading-tight animate-fade-up"
+                style="font-family: 'Playfair Display', serif; font-weight: 700;">
+                Merangkai Keindahan <br>
+                Untuk Setiap Momen Istimewa
+            </h2>
+
+            <div class="w-20 h-[2px] bg-[#6B8F71] mx-auto mb-8"></div>
+
+            <p class="text-[#5F6A62] text-lg leading-relaxed mb-6 max-w-3xl mx-auto animate-fade-up">
+                <strong>Floristería</strong> hadir untuk membantu Anda merayakan
+                setiap momen berharga dengan sentuhan yang lebih indah,
+                personal, dan penuh makna. Kami menghadirkan berbagai pilihan
+                bouquet, hampers, mahar, papan akrilik, hingga hadiah custom
+                yang dirancang dengan detail dan kreativitas terbaik.
+            </p>
+
+            <p class="text-[#7A847D] text-lg leading-relaxed max-w-3xl mx-auto animate-fade-up">
+                Dari wisuda, ulang tahun, anniversary, pernikahan,
+                grand opening, hingga berbagai perayaan spesial lainnya,
+                setiap karya Floristería dibuat untuk menghadirkan kesan hangat,
+                elegan, dan tak terlupakan bagi orang yang Anda sayangi.
+            </p>
+
+            <!-- Quote -->
+            <div class="mt-12">
+                <p class="italic text-[#6B8F71] text-xl animate-fade-up"
+                    style="font-family: 'Playfair Display', serif;">
+                    “Because every flower tells a story,
+                    and every gift carries a feeling.”
                 </p>
-
-                <p class="text-white/80 text-lg leading-relaxed animate-fade-up"
-                    style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-                    Mulai dari wisuda, ulang tahun, anniversary, pernikahan, grand opening, hingga berbagai perayaan spesial lainnya, setiap karya Floristería dibuat dengan perhatian khusus agar mampu menciptakan kesan yang tak terlupakan.
-                </p>
-
             </div>
-        </section>
+
+        </div>
+    </section>
 
         <!-- Footer & Contact Section -->
-        <footer id="contact" class="bg-neutral-900 text-gray-300 pt-8 pb-14 md:pt-16 md:pb-20 px-6 flex flex-col">
+        <footer id="contact"
+            class="bg-[#2F3E34] text-gray-300 pt-8 pb-14 md:pt-16 md:pb-20 px-6 flex flex-col">
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
                 
                 <!-- Brand -->
                 <div>
-                  <h3 class="text-3xl text-white mb-2 animate-fade-up" style="font-family:'Roboto', sans-serif; font-weight: 700;">
-                    Floristería
-                  </h3>
-                  <p class="text-sm text-gray-400 animate-fade-up" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
-                    Spesialis buket bunga, buket uang, buket wisuda, mahar, hampers, papan akrilik, dan gift custom untuk wisuda, ulang tahun, pernikahan, grand opening, dan berbagai perayaan spesial.
-                  </p>
+                    <h3 class="text-3xl text-white mb-2 animate-fade-up" style="font-family:'Roboto', sans-serif; font-weight: 700;">
+                        Floristería
+                    </h3>
+                    <p class="text-sm text-gray-400 animate-fade-up" style="font-family: 'Roboto', sans-serif; font-weight: 400;">
+                        Spesialis buket bunga, buket uang, buket wisuda, mahar, hampers, papan akrilik, dan gift custom untuk wisuda, ulang tahun, pernikahan, grand opening, dan berbagai perayaan spesial.
+                    </p>
                 </div>
                 
                 <!-- Kontak -->
@@ -638,17 +703,20 @@
                   <h4 class="text-white mb-3 animate-fade-up" style="font-family: 'Roboto', sans-serif; font-weight: 700;">
                     Kontak Kami
                   </h4>
+
                   <ul class="space-y-2 text-sm">
                     <li class="flex items-center gap-2 animate-fade-up">
                       <img class="w-5 h-5" src="img/icon/hp.svg" alt="WhatsApp" loading="lazy">
                       <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">WhatsApp:</span>
                       <span class="text-gray-400" style="font-family: 'Roboto', sans-serif; font-weight: 400;">0878-0205-5577</span>
                     </li>
+
                     <li class="flex items-center gap-2 animate-fade-up">
                       <img class="w-5 h-5" src="img/icon/email.svg" alt="Email" loading="lazy">
                       <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">Email:</span>
                       <span class="text-gray-400" style="font-family: 'Roboto', sans-serif; font-weight: 400;">floristeria.fortune@gmail.com</span>
                     </li>
+
                     <li class="flex items-center gap-2 animate-fade-up">
                       <img class="w-5 h-5" src="img/icon/jam.svg" alt="Jam Operasional" loading="lazy">
                       <span style="font-family: 'Roboto', sans-serif; font-weight: 500;">Jam Operasional:</span>
@@ -686,7 +754,7 @@
                     <div class="text-center mt-2">
                         <a href="https://maps.google.com/?cid=17180470187042054231"
                             target="_blank"
-                            class="inline-block px-5 py-2 bg-[#AB3F68] text-white font-semibold rounded-full shadow-sm hover:shadow-md hover:bg-[#923456] transition-all duration-300 text-base animate-fade-up">
+                            class="inline-block px-5 py-2 bg-[#96235C] text-white font-semibold rounded-full shadow-sm hover:shadow-md hover:bg-[#923456] transition-all duration-300 text-base animate-fade-up">
 
                             Buka di Google Maps
 
